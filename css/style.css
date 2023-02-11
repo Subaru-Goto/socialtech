@@ -95,3 +95,45 @@ header {
   right: 0;
   z-index: 10;
 }
+/* heading */
+h2 {
+  margin: 40px 0 0 0;
+}
+h2::after {
+  /* add horizontal line next to headings*/
+  content: url("../images/line.png");
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+/* mission */
+#mission {
+  /* centering with 80px spaces on top and bottom*/
+  margin: 80px auto 80px auto;
+  width: 100%;
+}
+
+#mission-flex {
+  /* spread out 2 divs */
+  width: 100%;
+  /* set 2 dives next to each other */
+  display: flex;
+}
+
+#mission-flex > div {
+  /* align width of each div equally */
+  width: 50%;
+  /* with 20px margins */
+  margin: 20px;
+}
+
+#mission-photo {
+  width: 100%;
+}
+
+#s2dgs {
+  margin-top: 50px;
+}
