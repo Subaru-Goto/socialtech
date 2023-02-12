@@ -129,11 +129,134 @@ h3 {
   /* with 20px margins */
   margin: 20px;
 }
-
 #mission-photo {
   width: 100%;
 }
 
 #s2dgs {
   margin-top: 50px;
+}
+/* product */
+#product {
+  background-color:#fafafa;
+  width: 100%;
+  margin: 80px 0 80px 0;
+  padding: 10px 40px 10px 40px;
+}
+/* outer */
+#product > div {
+  margin-top: 40px;
+  display: flex;
+}
+
+/* left column */
+#product-left {
+  width: 50%;
+  margin-right: 20px;
+}
+/* right column */
+#product-right {
+  width:50%;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+/* left div */
+#product-left > div {
+  position: relative;
+  height: 480px;
+  margin-right: 20px;
+}
+
+/* right div */
+#product-right > div {
+  position: relative;
+  height: 480px;
+  margin-right: 20px;
+}
+
+/* picture: keep it in the box */
+.product-photo {
+  width: 100%;
+}
+
+/* explanation */
+.product-explain {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 280px;
+  margin: 0 40px 0 40px;
+  padding: 20px;
+  /* add shadow to the div box*/
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+  
+/* explanation title */
+.product-explain > span {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+  
+/* explanation headding3 */
+.product-explain > h3 {
+  margin: 5px 0 5px 0;
+}  
+/* explanation */
+.product-explain > p {
+  margin: 0;
+}  
+/* Read more button */
+#product-more {
+  margin: 0 auto -42px auto;
+}
+/* ABOUT US */
+#aboutus {
+  margin: 80px auto 80px auto;
+}
+
+/* OUTER */
+#aboutus > div {
+  display: flex;
+}
+
+/* about us pictures */
+.culture-img {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.culture-img2 {
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* table */
+.culture-table {
+  max-width: 500px;
+  margin-right: 50px;
+}
+
+.culture-num {
+  font-size: 80px;
+  color: #2710d5;
+  margin: 0 20px 0 0;
+}
+
+.culture-en {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+}
+
+.culture-jp {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.culture-description {
+  margin: 0;
 }
