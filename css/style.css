@@ -249,6 +249,7 @@ h3 {
   color: #2710d5;
   font-weight: bold;
   font-size: 24px;
+  /* setting english and japanese title vertically*/
   display: block;
 }
 
@@ -260,3 +261,75 @@ h3 {
 .culture-description {
   margin: 0;
 }
+
+/* VISION area */
+#vision {
+  margin: 80px auto 80px auto;
+}
+
+/* div in the vision section */
+#vision > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* 7 boxes */
+.vision-box {
+  /* Create recutangular */
+  width: 300px;
+  height: 300px;
+  /* Add spaces between boxes */
+  margin-bottom: 30px;
+  /* Set it as relative for the absolute position later */
+  position: relative;
+}
+
+.vision-box > img {
+  width: 100%;
+  height: auto;
+  /* Set each image at the top left corrner of div*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Set the base for layers */
+  z-index: 30;
+}
+
+/* Grouping heading and texts */
+.vision-box > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Set text above images */
+  z-index: 31;
+  margin-right: 20px;
+}  
+
+/* Index VISION */
+.vision-box > span > h4 {
+  /* Changing the color to blue */
+  color: #2710d5;
+  font-size: 19px;
+  /* Setting it 80px lower */
+  margin: 80px 0 0 0;
+}
+
+/* Emphasize the first letter */
+.vision-box > span > h4::first-letter {
+  font-size: 40px;
+}
+
+.vision-box > span > h5 {
+  font-size: 20px;
+  margin: 0 0 0 0;
+}
+
+/* Adding a bot of space between h5 heading and texts */
+.vision-box > span > p {
+  margin: 10px 0 0 0;
+}
+
+
+
