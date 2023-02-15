@@ -331,5 +331,63 @@ h3 {
   margin: 10px 0 0 0;
 }
 
+/* COMPANY */
+#company {
+  margin: 80px auto 80px auto;
+}
+/* strech tables out*/
+#company-table {
+  width: 100%;
+}
+.tableheader {
+  text-align: left;
+  padding: 20px;
+
+  /* bottom line for table head */
+  border-bottom-color: #2710d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  /* extend width */
+  width: 100px;
+}
+
+/* Adding the top line for the first row */
+.tableheader-first {
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #2710d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #2710d5;
+  border-top-width: 1px;
+  border-top-style: solid;
+  width: 100px;
+}
+
+/* Adding bottom sline for the cells */
+.cell {
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+/* Adding top line for the first cell*/
+.cell-first {
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #ececec;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+/* iframe map size adjustment */
+#company > iframe {
+ width: 100%;
+ height: 368px;
+ margin-top: 40px;
+}
+
 
 
