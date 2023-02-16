@@ -449,7 +449,63 @@ h3 {
   /* make the height longer than other box */
   height: 200px;
 }
+/* footer */
+footer {
+  background-color: #0d0d0d;
+  text-align: center;
+  /* Making background larger*/
+  padding: 80px 80px 30px 80px;
+}
 
+#footer-logo {
+  /* Adding space below */
+  margin-bottom: 30px;
+}
+/* Making space below links */
+#footer-link {
+  margin-bottom: 50px;
+}
+#footer-link > a {
+  /* Removing the underline for links */
+  text-decoration: none;
+  /* Adding spaces between each links */
+  margin: 10px;
+}
+/* Changing the link color to white */
+#footer-link > a:link {
+  color: #ffffff;
+}
+/* Keep the color always white */
+/* For visited links */
+#footer-link > a:visited {
+  color: #ffffff;
+}
+/* For hovering */
+#footer-link > a:hover {
+  color: #ffffff;
+  /* Showing underline for hovered links */
+  text-decoration: underline;
+}
+/* For active links */
+#footer-link > a:active {
+  color: #ffffff;
+}
+/* For social media */
+#sns-footer {
+  /* Making the div wider and align elements to be the left */
+  text-align: left;
+  width: 100%;
+}
+#sns-footer > a {
+  /* Making space between each social media logo*/
+  margin-right: 30px;
+}
+/* Copy right (span element)*/
+#copyright {
+  color: #ffffff;
+  /* float declaration works only for elements and not tags */
+  float: right;
+}
 
 
 
