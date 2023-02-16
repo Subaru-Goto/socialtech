@@ -333,7 +333,17 @@
         <section id="contact">
           <h2 class="index-h2">CONTACT</h2>
           <h3>お問い合わせ</h3>
-          <form>
+          <!--https://www.staticforms.xyz/-->
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="text" name="honeypot" style="display:none">
+            <!-- STATIC FORMSのアクセスキー -->
+            <input type="hidden" name="accessKey" value="YOUR-KEY">
+            <!--メールのタイトル-->
+            <input type="hidden" name="subject" value="お問い合わせフォーム" />
+            <!--送信先のメールアドレスをvalueに設定する-->
+            <input type="hidden" name="replyTo" value="YOUR-EMAIL">
+            <!--redirectToのURLは公開後のURLへリンクする-->
+            <input type="hidden" name="redirectTo" value="">
             <div>
               <div class="contact-heading">
                 <label class="contact-label">
@@ -390,46 +400,47 @@
                  placeholder="入力してください"
                  class="contact-textbox">
               </div>
+            </div>
               <!-- contact from -->
-              <div>
-                <div class="contact-heading">
-                  <label class="contact-label">
-                    お問い合わせ内容
-                    <span class="contact-span">必須</span>
-                  </label>
-                </div>
-                <div>
-                  <textarea
-                   class="contact-textarea"
-                   placeholder="入力してください"
-                   name="message"></textarea>
-                </div>
+            <div>
+              <div class="contact-heading">
+                <label class="contact-label">
+                  お問い合わせ内容
+                  <span class="contact-span">必須</span>
+                </label>
               </div>
               <div>
-                <div class="contact-heading">
-                  <label class="contact-label">
-                    ご希望の連絡先
-                    <span class="contact-span">必須</span>
-                  </label>
-                </div>
-                <div>
-                  <input
-                   class="radiobutton"
-                   type="radio"
-                   value="tel"
-                   name="contact" checked>
-                   <label>お電話</label>
-                  <input
-                   class="radiobutton"
-                   type="radio"
-                   value="mail"
-                   name="contact">
-                   <label>メール</label>
-                  <input
-                   class="radiobutton"
-                   type="radio"
-                   value="both"
-                   name="contact">
+                <textarea
+                  class="contact-textarea"
+                  placeholder="入力してください"
+                  name="message"></textarea>
+              </div>
+            </div>
+            <div>
+              <div class="contact-heading">
+                <label class="contact-label">
+                  ご希望の連絡先
+                  <span class="contact-span">必須</span>
+                </label>
+              </div>
+              <div>
+                <input
+                  class="radiobutton"
+                  type="radio"
+                  value="tel"
+                  name="contact" checked>
+                <label>お電話</label>
+                <input
+                  class="radiobutton"
+                  type="radio"
+                  value="mail"
+                  name="contact">
+                  <label>メール</label>
+                <input
+                  class="radiobutton"
+                  type="radio"
+                  value="both"
+                  name="contact">
                    <label>どちらでも</label>
                 </div>
               </div>
@@ -445,8 +456,8 @@
                       株式会社SocialTech<br><br>
                       <span>２．個人情報保護管理者（若しくはその代理人）の氏名又は職名、所属及び連絡先
                         鈴木 一郎 コーポレート部</span><br>
-                      メールアドレス：support@socialtech.net<br>
-                      TEL：03-xxxx-xxxx<br>
+                      メールアドレス:support@socialtech.net<br>
+                      TEL:03-xxxx-xxxx<br>
                       <span>３．個人情報の利用目的</span><br>
                       ・本サービス及び本サービスに関連する情報の提供又はそれらに関する連絡のため<br>
                       ・ユーザーの本人確認のため<br>
