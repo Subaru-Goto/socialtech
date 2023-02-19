@@ -11,500 +11,894 @@ p {
   font-size: 15px;
 }
 /* style for PC*/
+@media screen and (min-width: 768px) {
 /* width adjustment*/
-body {
-  max-width: 1080px;
-  min-width: 960px;
-  margin: 0 auto 0 auto;
-}
-/*header*/
-header {
-  display: flex;
-  justify-content: space-between;
-}
-/*nav bar layout*/
-#nav-pc {
-  /* align to the right */
-  text-align: right;
-  font-size: 14px;
-  padding-top: 15px;
-}
-/* style navigation links*/
-#nav-pc > a {
-  /* remove underline*/
-  text-decoration: none;
-  /* space between each link*/
-  margin-left: 20px;
-}
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+  /*header*/
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  /*nav bar layout*/
+  #nav-pc {
+    /* align to the right */
+    text-align: right;
+    font-size: 14px;
+    padding-top: 15px;
+  }
+  /* style navigation links*/
+  #nav-pc > a {
+    /* remove underline*/
+    text-decoration: none;
+    /* space between each link*/
+    margin-left: 20px;
+  }
 
-/* set a color of link to black */
-#nav-pc > a:link {
-  color: #0d0d0d;
-}
-/* let the link color stay with black*/
-#nav-pc > a:visited {
-  color: #0d0d0d;
-}
-/* show underlines by hovering*/
-#nav-pc > a:hover {
-  color: #0d0d0d;
-  text-decoration: underline;
-}
-/* change colors when a link is active*/
-#nav-pc > a:active {
-  color: #0d0d0d;
-}
+  /* set a color of link to black */
+  #nav-pc > a:link {
+    color: #0d0d0d;
+  }
+  /* let the link color stay with black*/
+  #nav-pc > a:visited {
+    color: #0d0d0d;
+  }
+  /* show underlines by hovering*/
+  #nav-pc > a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+  /* change colors when a link is active*/
+  #nav-pc > a:active {
+    color: #0d0d0d;
+  }
 
-/* main page */
-#main-visual {
-  position: relative;
-  height: 400px;
-}
+  /* Hide navi for mobile*/
+  #nav-sp, #menu-sp {
+    display: none;
+  
+  }
+  /* main page */
+  #main-visual {
+    position: relative;
+    height: 400px;
+  }
+  #main-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: #2710d5;
+    border-radius: 0 0 476px 0;
+    max-width: 620px;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
 
-#main-message {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  background-color: #2710d5;
-  border-radius: 0 0 476px 0;
-  max-width: 620px;
-  height: 100%;
+  }
+  #main-message > h1 {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 100px 0 0 50px;
+  }
+  #main-message > p {
+    position: absolute;
+    left: 10px;
+    font-size: 24px;
+    margin: 0 0 0 50px;
+  }
+  #main-visual > img {
+    max-width: 620px;
+    border-radius: 476px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  /* heading */
+  h2 {
+    margin: 40px 0 0 0;
+  }
+  h2::after {
+    /* add horizontal line next to headings*/
+    content: url("../images/line.png");
+    margin-left: 10px;
+  }
+
+  h3 {
+    font-size: 27px;
+  }
+
+  /* mission */
+  #mission {
+    /* centering with 80px spaces on top and bottom*/
+    margin: 80px auto 80px auto;
+    width: 100%;
+  }
+
+  #mission-flex {
+    /* spread out 2 divs */
+    width: 100%;
+    /* set 2 dives next to each other */
+    display: flex;
+  }
+
+  #mission-flex > div {
+    /* align width of each div equally */
+    width: 50%;
+    /* with 20px margins */
+    margin: 20px;
+  }
+  #mission-photo {
+    width: 100%;
+  }
+
+  #s2dgs {
+    margin-top: 50px;
+  }
+  /* product */
+  #product {
+    background-color:#fafafa;
+    width: 100%;
+    margin: 80px 0 80px 0;
+    padding: 10px 40px 10px 40px;
+  }
+  /* outer */
+  #product > div {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  /* left column */
+  #product-left {
+    width: 50%;
+    margin-right: 20px;
+  }
+  /* right column */
+  #product-right {
+    width:50%;
+    margin-left: 20px;
+    margin-top: 80px;
+  }
+
+  /* left div */
+  #product-left > div {
+    position: relative;
+    height: 480px;
+    margin-right: 20px;
+  }
+  /* right div */
+  #product-right > div {
+    position: relative;
+    height: 480px;
+    margin-right: 20px;
+  }
+
+  /* picture: keep it in the box */
+  .product-photo {
+    width: 100%;
+  }
+
+  /* explanation */
+  .product-explain {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 280px;
+    margin: 0 40px 0 40px;
+    padding: 20px;
+    /* add shadow to the div box*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  }
+    
+  /* explanation title */
+  .product-explain > span {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+    
+  /* explanation headding3 */
+  .product-explain > h3 {
+    margin: 5px 0 5px 0;
+  }  
+  /* explanation */
+  .product-explain > p {
+    margin: 0;
+  }  
+  /* Read more button */
+  #product-more {
+    margin: 0 auto -42px auto;
+  }
+  /* ABOUT US */
+  #aboutus {
+    margin: 80px auto 80px auto;
+  }
+
+  /* OUTER */
+  #aboutus > div {
+    display: flex;
+  }
+
+  /* about us pictures */
+  .culture-img {
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  .culture-img2 {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  /* table */
+  .culture-table {
+    max-width: 500px;
+    margin-right: 50px;
+  }
+
+  .culture-num {
+    font-size: 80px;
+    color: #2710d5;
+    margin: 0 20px 0 0;
+  }
+
+  .culture-en {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 24px;
+    /* setting english and japanese title vertically*/
+    display: block;
+  }
+
+  .culture-jp {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .culture-description {
+    margin: 0;
+  }
+
+  /* VISION area */
+  #vision {
+    margin: 80px auto 80px auto;
+  }
+
+  /* div in the vision section */
+  #vision > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* 7 boxes */
+  .vision-box {
+    /* Create recutangular */
+    width: 300px;
+    height: 300px;
+    /* Add spaces between boxes */
+    margin-bottom: 30px;
+    /* Set it as relative for the absolute position later */
+    position: relative;
+  }
+
+  .vision-box > img {
+    width: 100%;
+    height: auto;
+    /* Set each image at the top left corrner of div*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Set the base for layers */
+    z-index: 30;
+  }
+
+  /* Grouping heading and texts */
+  .vision-box > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Set text above images */
+    z-index: 31;
+    margin-right: 20px;
+  }  
+
+  /* Index VISION */
+  .vision-box > span > h4 {
+    /* Changing the color to blue */
+    color: #2710d5;
+    font-size: 19px;
+    /* Setting it 80px lower */
+    margin: 80px 0 0 0;
+  }
+
+  /* Emphasize the first letter */
+  .vision-box > span > h4::first-letter {
+    font-size: 40px;
+  }
+
+  .vision-box > span > h5 {
+    font-size: 20px;
+    margin: 0 0 0 0;
+  }
+
+  /* Adding a bot of space between h5 heading and texts */
+  .vision-box > span > p {
+    margin: 10px 0 0 0;
+  }
+
+  /* COMPANY */
+  #company {
+    margin: 80px auto 80px auto;
+  }
+  /* strech tables out*/
+  #company-table {
+    width: 100%;
+  }
+  .tableheader {
+    text-align: left;
+    padding: 20px;
+
+    /* bottom line for table head */
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    /* extend width */
+    width: 100px;
+  }
+
+  /* Adding the top line for the first row */
+  .tableheader-first {
+    text-align: left;
+    padding: 20px;
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #2710d5;
+    border-top-width: 1px;
+    border-top-style: solid;
+    width: 100px;
+  }
+
+  /* Adding bottom sline for the cells */
+  .cell {
+    padding: 30px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  /* Adding top line for the first cell*/
+  .cell-first {
+    padding: 30px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #ececec;
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+
+  /* iframe map size adjustment */
+  #company > iframe {
   width: 100%;
-  z-index: 11;
-
-}
-
-#main-message > h1 {
-  position: relative;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 100px 0 0 50px;
-}
-#main-message > p {
-  position: absolute;
-  left: 10px;
-  font-size: 24px;
-  margin: 0 0 0 50px;
-}
-#main-visual > img {
-  max-width: 620px;
-  border-radius: 476px 0 0 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
-}
-/* heading */
-h2 {
-  margin: 40px 0 0 0;
-}
-h2::after {
-  /* add horizontal line next to headings*/
-  content: url("../images/line.png");
-  margin-left: 10px;
-}
-
-h3 {
-  font-size: 27px;
-}
-
-/* mission */
-#mission {
-  /* centering with 80px spaces on top and bottom*/
-  margin: 80px auto 80px auto;
-  width: 100%;
-}
-
-#mission-flex {
-  /* spread out 2 divs */
-  width: 100%;
-  /* set 2 dives next to each other */
-  display: flex;
-}
-
-#mission-flex > div {
-  /* align width of each div equally */
-  width: 50%;
-  /* with 20px margins */
-  margin: 20px;
-}
-#mission-photo {
-  width: 100%;
-}
-
-#s2dgs {
-  margin-top: 50px;
-}
-/* product */
-#product {
-  background-color:#fafafa;
-  width: 100%;
-  margin: 80px 0 80px 0;
-  padding: 10px 40px 10px 40px;
-}
-/* outer */
-#product > div {
+  height: 368px;
   margin-top: 40px;
-  display: flex;
+  }
+
+  /* FORM */
+  #contact {
+    margin: 80px auto 80px auto;
+  }
+
+  #contact > form > div {
+    display: flex;
+    /* Left to right */
+    flex-direction: row;
+    /* wrap when the space is not sufficient*/
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  .contact-heading {
+    width: 240px;
+    /* align heading to center */
+    align-self: center;
+  }
+
+  .contact-label {
+    font-weight: bold;
+  }
+
+  /* span */
+  .contact-span {
+    color: #ce2222;
+    margin: 0 0 0 20px;
+    font-weight: bold;
+  }
+
+  /* Text box */
+  .contact-textbox {
+    /* No border on the top */
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    /* Bottom line */
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    /* Box area */
+    background-color: #fafafa;
+    width: 400px;
+    height: 56px;
+  }
+
+  /* Inquiry area */
+  .contact-textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 400px;
+    /* make the height longer than other box */
+    height: 200px;
+  }
+  /* footer */
+  footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    /* Making background larger*/
+    padding: 80px 80px 30px 80px;
+  }
+
+  #footer-logo {
+    /* Adding space below */
+    margin-bottom: 30px;
+  }
+  /* Making space below links */
+  #footer-link {
+    margin-bottom: 50px;
+  }
+  #footer-link > a {
+    /* Removing the underline for links */
+    text-decoration: none;
+    /* Adding spaces between each links */
+    margin: 10px;
+  }
+  /* Changing the link color to white */
+  #footer-link > a:link {
+    color: #ffffff;
+  }
+  /* Keep the color always white */
+  /* For visited links */
+  #footer-link > a:visited {
+    color: #ffffff;
+  }
+  /* For hovering */
+  #footer-link > a:hover {
+    color: #ffffff;
+    /* Showing underline for hovered links */
+    text-decoration: underline;
+  }
+  /* For active links */
+  #footer-link > a:active {
+    color: #ffffff;
+  }
+  /* For social media */
+  #sns-footer {
+    /* Making the div wider and align elements to be the left */
+    text-align: left;
+    width: 100%;
+  }
+  #sns-footer > a {
+    /* Making space between each social media logo*/
+    margin-right: 30px;
+  }
+  /* Copy right (span element)*/
+  #copyright {
+    color: #ffffff;
+    /* float declaration works only for elements and not tags */
+    float: right;
+  }
 }
 
-/* left column */
-#product-left {
-  width: 50%;
-  margin-right: 20px;
-}
-/* right column */
-#product-right {
-  width:50%;
-  margin-left: 20px;
-  margin-top: 80px;
-}
+/* mobile - if the screen size is below or equal to 768px */
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+  }
+  /* hide out navigation for PC */
+  #nav-pc {
+    display: none;
+  }
+  /* Humburger menue */
+  #menu-sp {
+    float: right;
+    padding: 0;
+  }
+  #nav-sp {
+    background: #2710d5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+  /* Adding close button */
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  /* Logo for navigation */
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+  /* Navigation links */
+  #nav-sp > a {
+    display: block;
+  }
+  #nav-sp > a:link {
+    color: #ffffff;
+  }
+  #nav-sp > a:visited {
+    color: #ffffff;
+  }
+  #nav-sp > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #nav-sp > a:active {
+    color: #ffffff;
+  }
+  #nav-sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  #sns {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  #sns > a {
+    margin-right: 30px;
+  }
 
-/* left div */
-#product-left > div {
-  position: relative;
-  height: 480px;
-  margin-right: 20px;
-}
+  /* main visual */
+  #main-visual {
+    position: relative;
+    height: 470px;
+    width: 100%;
+    overflow: hidden;
+  }
 
-/* right div */
-#product-right > div {
-  position: relative;
-  height: 480px;
-  margin-right: 20px;
-}
-
-/* picture: keep it in the box */
-.product-photo {
-  width: 100%;
-}
-
-/* explanation */
-.product-explain {
-  background-color: #ffffff;
-  position: absolute;
-  left: 0;
-  top: 280px;
-  margin: 0 40px 0 40px;
-  padding: 20px;
-  /* add shadow to the div box*/
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
-}
+  #main-visual > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2710d5;
+    color: white;
+    border-radius: 0 0 476px 0;
+    text-align: center;
+    height: 280px;
+    width: 100%;
+    z-index: 11;
+  }
+  #main-visual > div > h1 {
+    font-size: 24px;
+    margin: 90px 0 0 0;
+  }
+  #man-visual > div > p {
+    margin: 0;
+  }
+  #main-visual > img {
+    width: 100%;
+    border-radius: 476px 0 0 0;
+    /* hide under the back ground of main message */
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  /* heading */
+  h2::after {
+    content: url("../images/line.png");
+    margin-left: 10px;
+  }
+  h3 {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+  }
+  /* Mission */
+  #mission {
+    margin: 20px;
+  }
+  #mission-photo {
+    width: 100%;
+  }
+  #s2dgs {
+    width: 100%;
+  }
+  /* Product */
+  #product {
+      background-color: #fafafa;
+      padding-top: 10px;
+  }
   
-/* explanation title */
-.product-explain > span {
-  color: #2710d5;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0;
-}
-  
-/* explanation headding3 */
-.product-explain > h3 {
-  margin: 5px 0 5px 0;
-}  
-/* explanation */
-.product-explain > p {
-  margin: 0;
-}  
-/* Read more button */
-#product-more {
-  margin: 0 auto -42px auto;
-}
-/* ABOUT US */
-#aboutus {
-  margin: 80px auto 80px auto;
-}
+  #product > h2 {
+    margin-left: 20px;
+  }
+  /* Outer */
+  /* Vertical */
+  #product-left, #product-right {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  /* images + description */
+  #product-left > div,
+  #product-right > div {
+    position: relative;
+    height: 540px;
+  }
+  /* Explanation */
+  .product-explain {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  }
+  .product-explain > span {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px;
+  }
+  .product-explain > h3 {
+     margin: 10px 0 10px 0;
+  }
+  /* images */
+  .product-photo {
+    width: 100%;
+  }
+  #product-more > img {
+    margin: 0 0 -42px 20px;
+  }
+  /* ABOUT US */
+  #aboutus {
+    margin: 80px 20px 80px 20px;
+  }
+  #aboutus > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .culture-table {
+    width: 100%;
+    padding-right: 20px;
+    order: 2;
+  }
+  .culture-img {
+    width: 100%;
+    order: 1;
+  }
+  .culture-img2{
+    width: 100%;
+  }
+  .culture-num {
+    font-size: 80px;
+    color: #2710d5;
+  }
+  .culture-en {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+  }
+  .culture-jp {
+    display: block;
+  }
+  .culture-description {
+    margin: 0;
+  }
 
-/* OUTER */
-#aboutus > div {
-  display: flex;
-}
+  /* SECTION */
+  #vision {
+    margin: 80px 20px 80px 20px;
+  }
 
-/* about us pictures */
-.culture-img {
-  width: 100%;
-  align-self: flex-start;
-}
+  .vision-box {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .vision-box > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+  }
+  .vision-box > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 31;
+    margin-right: 20px;
+  }
+  .vision-box > span > h4 {
+    color: #2710d5;
+    font-size: 19px;
+    margin: 60px 0 0 0;
+  }
+  .vision-box > span > h5 {
+    font-size: 20px;
+    margin: 0 0 0 0;
+  }
+  .vision-box > span > p {
+    margin: 10px 0 0 0;
+  }
+  /* COMPANY */
+  #company {
+    margin: 0 20px 0 20px;
+  }
+  #company > h3 {
+    margin-bottom: 20px;
+  }
+  #company > table {
+    width: 100%;
+  }
+  .tableheader-first {
+    text-align: left;
+    padding: 20px;
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #2710d5;
+    border-top-width: 1px;
+    border-top-style: solid;
+    width: 50px;
+  }
+  .tableheader {
+    text-align: left;
+    padding: 20px;
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 50px;
+  }
+  .cell {
+    padding: 20px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+  .cell-first {
+    padding: 20px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #ececec;
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+  #company > iframe {
+    width: 100%;
+    height: 240px;
+    margin: 40px 0 0 0;
+  }
+   /* inquiry */
+  #contact {
+    margin: 80px 20px 80px 20px;
+  }
+  #contact > h3 {
+    margin-bottom: 20px;
+  }
+  #contact > form > div {
+    margin-bottom: 20px;
+  }
+  .contact-heading {
+    margin-bottom: 20px;
+  }
 
-.culture-img2 {
-  margin-top: 50px;
-  width: 100%;
-}
+  /* Label */
+  .contact-label {
+    font-weight: bold;
+  }
 
-/* table */
-.culture-table {
-  max-width: 500px;
-  margin-right: 50px;
-}
-
-.culture-num {
-  font-size: 80px;
-  color: #2710d5;
-  margin: 0 20px 0 0;
-}
-
-.culture-en {
-  color: #2710d5;
-  font-weight: bold;
-  font-size: 24px;
-  /* setting english and japanese title vertically*/
-  display: block;
-}
-
-.culture-jp {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.culture-description {
-  margin: 0;
-}
-
-/* VISION area */
-#vision {
-  margin: 80px auto 80px auto;
-}
-
-/* div in the vision section */
-#vision > div {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* 7 boxes */
-.vision-box {
-  /* Create recutangular */
-  width: 300px;
-  height: 300px;
-  /* Add spaces between boxes */
-  margin-bottom: 30px;
-  /* Set it as relative for the absolute position later */
-  position: relative;
-}
-
-.vision-box > img {
-  width: 100%;
-  height: auto;
-  /* Set each image at the top left corrner of div*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* Set the base for layers */
-  z-index: 30;
-}
-
-/* Grouping heading and texts */
-.vision-box > span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* Set text above images */
-  z-index: 31;
-  margin-right: 20px;
-}  
-
-/* Index VISION */
-.vision-box > span > h4 {
-  /* Changing the color to blue */
-  color: #2710d5;
-  font-size: 19px;
-  /* Setting it 80px lower */
-  margin: 80px 0 0 0;
-}
-
-/* Emphasize the first letter */
-.vision-box > span > h4::first-letter {
-  font-size: 40px;
-}
-
-.vision-box > span > h5 {
-  font-size: 20px;
-  margin: 0 0 0 0;
-}
-
-/* Adding a bot of space between h5 heading and texts */
-.vision-box > span > p {
-  margin: 10px 0 0 0;
-}
-
-/* COMPANY */
-#company {
-  margin: 80px auto 80px auto;
-}
-/* strech tables out*/
-#company-table {
-  width: 100%;
-}
-.tableheader {
-  text-align: left;
-  padding: 20px;
-
-  /* bottom line for table head */
-  border-bottom-color: #2710d5;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  /* extend width */
-  width: 100px;
-}
-
-/* Adding the top line for the first row */
-.tableheader-first {
-  text-align: left;
-  padding: 20px;
-  border-bottom-color: #2710d5;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-top-color: #2710d5;
-  border-top-width: 1px;
-  border-top-style: solid;
-  width: 100px;
-}
-
-/* Adding bottom sline for the cells */
-.cell {
-  padding: 30px;
-  border-bottom-color: #ececec;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-}
-/* Adding top line for the first cell*/
-.cell-first {
-  padding: 30px;
-  border-bottom-color: #ececec;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-top-color: #ececec;
-  border-top-width: 1px;
-  border-top-style: solid;
-}
-
-/* iframe map size adjustment */
-#company > iframe {
- width: 100%;
- height: 368px;
- margin-top: 40px;
-}
-
-/* FORM */
-#contact {
-  margin: 80px auto 80px auto;
-}
-
-#contact > form > div {
-  display: flex;
-  /* Left to right */
-  flex-direction: row;
-  /* wrap when the space is not sufficient*/
-  flex-wrap: wrap;
-  padding-bottom: 30px;
-}
-
-.contact-heading {
-  width: 240px;
-  /* align heading to center */
-  align-self: center;
-}
-
-.contact-label {
-  font-weight: bold;
-}
-
-/* span */
-.contact-span {
-  color: #ce2222;
-  margin: 0 0 0 20px;
-  font-weight: bold;
-}
-
-/* Text box */
-.contact-textbox {
-  /* No border on the top */
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  /* Bottom line */
-  border-bottom-width: 1px;
-  border-bottom-color: #707070;
-  border-bottom-style: solid;
-  /* Box area */
-  background-color: #fafafa;
-  width: 400px;
-  height: 56px;
-}
-
-/* Inquiry area */
-.contact-textarea {
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom-width: 1px;
-  border-bottom-color: #707070;
-  border-bottom-style: solid;
-  background-color: #fafafa;
-  width: 400px;
-  /* make the height longer than other box */
-  height: 200px;
-}
-/* footer */
-footer {
-  background-color: #0d0d0d;
-  text-align: center;
-  /* Making background larger*/
-  padding: 80px 80px 30px 80px;
-}
-
-#footer-logo {
-  /* Adding space below */
-  margin-bottom: 30px;
-}
-/* Making space below links */
-#footer-link {
-  margin-bottom: 50px;
-}
-#footer-link > a {
-  /* Removing the underline for links */
-  text-decoration: none;
-  /* Adding spaces between each links */
-  margin: 10px;
-}
-/* Changing the link color to white */
-#footer-link > a:link {
-  color: #ffffff;
-}
-/* Keep the color always white */
-/* For visited links */
-#footer-link > a:visited {
-  color: #ffffff;
-}
-/* For hovering */
-#footer-link > a:hover {
-  color: #ffffff;
-  /* Showing underline for hovered links */
-  text-decoration: underline;
-}
-/* For active links */
-#footer-link > a:active {
-  color: #ffffff;
-}
-/* For social media */
-#sns-footer {
-  /* Making the div wider and align elements to be the left */
-  text-align: left;
-  width: 100%;
-}
-#sns-footer > a {
-  /* Making space between each social media logo*/
-  margin-right: 30px;
-}
-/* Copy right (span element)*/
-#copyright {
-  color: #ffffff;
-  /* float declaration works only for elements and not tags */
-  float: right;
+  /* reuested */
+  .contact-span {
+    color: #ce2222;
+    margin: 0 0 0 20px;
+    font-weight: bold;
+  }
+  .contact-textbox {
+    height: 56px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fafafa;
+    border-bottom-color: #707070;
+    border-bottom-width: 1px;
+    border-style: solid;
+    min-width: 300px;
+    width: 100%;
+  }
+  .contact-textarea {
+    height: 150px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fafafa;
+    width: 100%;
+  }
+  .radiobutton {
+    margin-bottom: 20px;
+  }
+  .radiobutton + label::after {
+    content: "\A";
+    white-space: pre;
+  }
+  /* FOOTER */
+  footer {
+    background-color: #0d0d0d;
+    padding: 30px 20px 50px 20px;
+  }
+  #footer-logo {
+    margin-bottom: 30px;
+  }
+  #footer-link {
+    margin-bottom: 50px;
+  }
+  #footer-link > a {
+    text-decoration: none;
+    margin: 0 20px 30px 0;
+    display: block;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  #footer-link > a:link {
+    color: #ffffff;
+  }
+  #footer-link > a:visited {
+    color: #ffffff;
+  }
+  #footer-link > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #footer-link > a:active {
+    color: #ffffff;
+  }
+  #sns-footer > a {
+    margin-right: 30px;
+  }
+  #copyright {
+    font-size: 12px;
+    display: block;
+    margin-top: 30px;
+    color: #ffffff;
+  }
 }
 
 
